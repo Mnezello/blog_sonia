@@ -1,0 +1,164 @@
+@import "./colors";
+
+.qualification-bg {
+    background-color: $qualification-bg;
+    width: 100%;
+}
+
+.qualification-container h1 {
+    color: $primary-tile;
+    font-size: 2em;
+    padding: 1.4em 1em 0.6em 1em;
+    margin: 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.qualification-item-odd {
+    width: 100%;
+    padding: 0.8em 1.2em 0.8em 1.2em;
+    display: flex;
+    justify-content: start;
+}
+
+.qualification-item-even {
+    width: 100%;
+    padding: 0.8em 1.2em 0.8em 1.2em;
+    display: flex;
+    justify-content: end;
+}
+
+.large-icon-bg {
+    width: 8em;
+    height: 8em;
+    margin: 2em 3em 2em 3em;
+    background: #fbfbfb;
+    background: -moz-radial-gradient(center, ellipse cover, #fbfbfb 1%, #f4f4f4 45%, #f4f4f4 45%, #d8d8d8 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #fbfbfb 1%,#f4f4f4 45%,#f4f4f4 45%,#d8d8d8 100%);
+    background: radial-gradient(ellipse at center, #fbfbfb 1%,#f4f4f4 45%,#f4f4f4 45%,#d8d8d8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#d8d8d8',GradientType=1 );
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 2px $bg-shadow;
+    -webkit-box-shadow: 0px 2px 5px 2px $bg-shadow;
+    -moz-box-shadow: 0px 2px 5px 2px $bg-shadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.qualification-content-odd {
+   text-align: left;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   color: $second-title;
+   font-size: 1.3em;
+   font-weight: 200;
+}
+
+.qualification-content-even {
+   text-align: right;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   color: $second-title;
+   font-size: 1.3em;
+   font-weight: 200;
+}
+
+.qualification-content-odd h2 {
+    color: $medium-title;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0 0 0.5em 0;
+}
+
+.qualification-content-even h2 {
+    color: $medium-title;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0 0 0.5em 0;
+}
+
+.qualification-icon {
+    color: $primary-tile;
+}
+
+.qualification-item-odd:hover .qualification-content-odd {
+    color: $primary-tile;
+    -webkit-transition: color 0.4s ease-in-out;
+    -moz-transition: color 0.4s ease-in-out;
+    -ms-transition: color 0.4s ease-in-out;
+    -o-transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
+}
+
+.qualification-item-even:hover .qualification-content-even {
+    color: $primary-tile;
+    -webkit-transition: color 0.4s ease-in-out;
+    -moz-transition: color 0.4s ease-in-out;
+    -ms-transition: color 0.4s ease-in-out;
+    -o-transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
+}
+
+.qualification-item-odd:hover .qualification-content-odd h2 {
+    color: $primary-tile;
+}
+
+.qualification-item-even:hover .qualification-content-even h2 {
+    color: $primary-tile;
+}
+
+.qualification-item-odd:hover .large-icon-bg {
+    background: #ff771d;
+    background: -moz-radial-gradient(center, ellipse cover, #ff771d 53%, #de5900 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #ff771d 53%,#de5900 100%);
+    background: radial-gradient(ellipse at center, #ff771d 53%,#de5900 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff771d', endColorstr='#de5900',GradientType=1 );
+    box-shadow: 0px 2px 5px 2px $bg-shadow;
+    -webkit-box-shadow: 0px 2px 5px 2px $bg-shadow;
+    -moz-box-shadow: 0px 2px 5px 2px $bg-shadow;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.qualification-item-even:hover .large-icon-bg {
+    background: #ff771d;
+    background: -moz-radial-gradient(center, ellipse cover, #ff771d 53%, #de5900 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #ff771d 53%,#de5900 100%);
+    background: radial-gradient(ellipse at center, #ff771d 53%,#de5900 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff771d', endColorstr='#de5900',GradientType=1 );
+    box-shadow: 0px 2px 5px 2px $bg-shadow;
+    -webkit-box-shadow: 0px 2px 5px 2px $bg-shadow;
+    -moz-box-shadow: 0px 2px 5px 2px $bg-shadow;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.qualification-item-odd:hover .qualification-icon {
+    color: $light-text;
+}
+
+.qualification-item-even:hover .qualification-icon {
+    color: $light-text;
+}
+
+#sugestoes {
+    height: 2em;
+    background-color: transparent;
+}

@@ -1,0 +1,232 @@
+@import "./colors";
+
+.contact-container h1 {
+    color: $light-text;
+    font-size: 2em;
+    padding: 1.4em 1em 0.6em 1em;
+    margin: 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em 5em 2em;
+}
+
+.contact-input {
+    margin: 0.5em 0.7em 0 0.7em;
+    width: 60%;
+    height: 3.4em;
+    padding: 0.2em 2em 0.2em 2em;
+    color: $second-title;
+    background-color: $light-container;
+    font-size: 1em;
+    font-weight: 200;
+    border: none;
+    border-radius: 0;
+}
+
+.contact-input:focus {
+    color: $primary-tile;
+ 
+    outline: none;
+}
+
+.contact-input-error {
+    margin: 0.5em 0.7em 0 0.7em;
+    width: 60%;
+    height: 3.4em;
+    padding: 0.2em 2em 0.2em 2em;
+    color: $second-title;
+    background-color: $light-container;
+    font-size: 1em;
+    font-weight: 200;
+    border: none;
+}
+
+.contact-input-error:focus {
+    color: $primary-tile;
+    background-color: $light-container;
+    outline: none;
+}
+
+.contact-input-message {
+    margin: 0.5em 0.7em 0 0.7em;
+    width: 60%;
+    height: 12em;
+    padding: 1em 2em 1em 2em;
+    color: $second-title;
+    background-color: $light-container;
+    font-size: 1em;
+    font-weight: 200;
+    border: none;
+    border-radius: 0;
+}
+
+.contact-input-message:focus {
+    color: $primary-tile;
+   
+    outline: none;
+}
+
+.contact-input-message-error {
+    margin: 0.5em 0.7em 0 0.7em;
+    width: 60%;
+    height: 12em;
+    padding: 1em 2em 1em 2em;
+    color: $second-title;
+    background-color: $light-container;
+    font-size: 1em;
+    font-weight: 200;
+    border: none;
+}
+
+.contact-input-message-error:focus {
+    color: $primary-tile;
+    background-color: $light-container;
+    outline: none;
+}
+
+.input-error {
+    width: 60%;
+    margin: 0em 0.7em 0 0.7em;
+    padding: 0.4em 3em 0.4em 3em;
+    color: $contact-error;
+    font-size: 0.8em;
+    font-weight: 300;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.error-icon {
+    margin: 0 0.7em 0 0;
+    color: $contact-error;
+}
+
+.input-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $light-text;
+    margin: 1em;
+    border: none;
+    font-size: 1.8em;
+    font-weight: 300;
+    background-color: $highlight;
+    height: 2em;
+    width: 9em;
+    border-radius: 30px;
+    box-shadow: 0px 2px 5px 2px $bg-shadow;
+    -webkit-box-shadow: 0px 2px 5px 2px $bg-shadow;
+    -moz-box-shadow: 0px 2px 5px 2px $bg-shadow;
+}
+
+.input-submit:hover {
+    color: $light-text;
+    background-color: transparent;
+    border: 2px solid $light-text;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.ReactModal__Overlay {
+    z-index: 10000;
+    background-color: $modal-bg !important;
+}
+
+.contact-modal {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.modal-container {
+    color: $primary-tile;
+    width: 40em;
+    background-color: $contact-bg;
+    padding: 1.5em;
+    box-shadow: 0px 2px 5px 2px $bg-shadow;
+    -webkit-box-shadow: 0px 2px 5px 2px $bg-shadow;
+    -moz-box-shadow: 0px 2px 5px 2px $bg-shadow;
+    font-weight: 200;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.success-title {
+    color: $contact-success;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+.modal-close-button {
+    color: $medium-title;
+    background-color: transparent;
+    border: 1px solid $medium-title;
+    font-weight: 300;
+    border-radius: 30px;
+    padding: 0.2em 1.7em 0.2em 1.7em;
+    margin: 1em;
+}
+
+.modal-close-button:hover {
+    background-color: #d1d1d152;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.failure-title {
+    color: $contact-error;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+@-webkit-keyframes slideInDown {
+    0% {
+        -webkit-transform: translateY(-70%);
+        transform: translateY(-70%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        -webkit-transform: translateY(-70%);
+        transform: translateY(-70%);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+} 
